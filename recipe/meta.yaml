@@ -1,5 +1,5 @@
 {% set name = "popclass" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/popclass-{{ version }}.tar.gz
-  sha256: 6dda6438d5153487a5b1cbb85a2bad1867c5e3ac44bb61f9e8da5450252adc71
+  sha256: bc55c807da9c87d4d7014c90b1746d44936be62773fb86bf45ffc268e65dc7c2
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - numpy
     - asdf
     - matplotlib-base
+    - scikit-learn
 
 test:
   imports:
